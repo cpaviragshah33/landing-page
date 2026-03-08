@@ -7,8 +7,7 @@ export default function CtaBanner() {
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-white/70">
           Whether you&apos;re filing as an individual or running a business, get
-          expert guidance tailored to your needs. Your first consultation is
-          free.
+          expert guidance tailored to your needs.
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a

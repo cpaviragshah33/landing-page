@@ -6,16 +6,12 @@ export default function Hero() {
       <div className="pointer-events-none absolute -bottom-20 -left-20 h-[300px] w-[300px] rounded-full bg-accent/10 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-4 py-20 text-center sm:px-6 lg:px-8">
-        <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-accent">
-          Licensed CPA &middot; Tax &amp; Advisory
-        </p>
         <h1 className="mx-auto max-w-4xl text-4xl font-bold leading-tight tracking-tight text-navy-900 sm:text-5xl lg:text-6xl">
-          Expert Tax Solutions for Individuals &amp; Businesses
+          Your Partner in Tax Strategy and Growth
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-charcoal/80">
-          Personalized tax preparation, strategic planning, and compliance
-          services tailored to your unique financial situation. Navigate tax
-          season with confidence.
+          Precision in Numbers. Confidence in Decisions. — Accuracy, integrity,
+          and results for individuals and businesses alike.
         </p>
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a

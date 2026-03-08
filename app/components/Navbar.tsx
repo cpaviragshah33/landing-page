@@ -29,8 +29,13 @@ export default function Navbar() {
       }`}
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <a href="#" className="text-xl font-semibold text-navy-900">
-          Virag Shah, CPA
+        <a href="#" className="flex flex-col">
+          <span className="text-xl font-semibold leading-tight text-navy-900">
+            Virag Shah CPA
+          </span>
+          <span className="text-xs font-medium tracking-wide text-charcoal/60">
+            Certified Public Accountant
+          </span>
         </a>
 
         {/* Desktop nav */}

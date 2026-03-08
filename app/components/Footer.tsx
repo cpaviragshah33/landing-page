@@ -15,7 +15,10 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <p className="text-lg font-semibold text-white">
-              Virag Shah, CPA
+              Virag Shah CPA
+            </p>
+            <p className="text-xs font-medium tracking-wide text-white/50">
+              Certified Public Accountant
             </p>
             <p className="mt-2 text-sm leading-relaxed text-white/60">
               Trusted tax preparation and advisory services for individuals and
@@ -71,7 +74,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 border-t border-white/10 pt-6 text-center text-xs text-white/40">
-          &copy; {new Date().getFullYear()} Virag Shah, CPA. All rights
+          &copy; {new Date().getFullYear()} Virag Shah CPA. All rights
           reserved.
         </div>
       </div>

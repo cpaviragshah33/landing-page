@@ -1,41 +1,60 @@
 import {
   UserIcon,
-  BuildingIcon,
+  BookOpenIcon,
+  BriefcaseIcon,
   ChartIcon,
-  ShieldCheckIcon,
-  GlobeIcon,
+  ClipboardDocumentListIcon,
 } from "./icons";
 
 const services = [
   {
-    icon: UserIcon,
-    title: "Individual Tax Returns",
+    icon: BriefcaseIcon,
+    title: "Entity Formation",
     description:
-      "Accurate and timely filing for W-2 employees, freelancers, and self-employed individuals. Maximize your deductions and minimize your liability.",
+      "Forming a new entity begins with using business objectives to determine the entity type that will best suit your needs. We provide consultation on entity structure analysis to explain the tax implications of your choice of entity and jurisdiction. Our services make it easy to form new entities in all 50 U.S. states.",
+    items: [],
   },
   {
-    icon: BuildingIcon,
-    title: "Business Tax Returns",
+    icon: BookOpenIcon,
+    title: "Bookkeeping Services",
     description:
-      "Comprehensive tax preparation for LLCs, S-Corps, partnerships, and sole proprietorships. Stay compliant while optimizing your tax position.",
+      "Accurate bookkeeping is important to sustaining and expanding a business. We provide detailed, analytical financial reports that enable business owners to understand and address each component of their company.",
+    items: [
+      "Transaction and related data entry",
+      "Monitoring Accounts Receivable and Accounts Payable",
+      "Performing Bank Reconciliations",
+      "Analyzing outstanding checks/deposits",
+      "Recording monthly adjusting journal entries",
+      "Creating monthly financial reports (P&L, Balance Sheet & Cash Flows)",
+    ],
+  },
+  {
+    icon: UserIcon,
+    title: "Tax Services",
+    description:
+      "Tax services for individuals and a wide range of businesses including LLCs, Partnerships, S-Corporations, and C-Corporations. Our goal is to help you stay in compliance with the law while paying the minimum amount of tax possible.",
+    items: [
+      "Individual Tax Return Preparation (1040)",
+      "Business Tax Return Preparation (1065, 1120, 1120S)",
+      "Multi-State & Out-of-State Tax Return Preparation",
+      "Report of Foreign Bank and Financial Accounts (FBAR)",
+      "Tax Compliance & Planning",
+      "Annual Franchise Tax Returns",
+    ],
   },
   {
     icon: ChartIcon,
     title: "Tax Planning",
     description:
-      "Proactive strategies to reduce your tax burden year-round. Retirement planning, estimated payments, and entity structuring advice.",
+      "The tax planning helps you to successfully and legally reduce your tax liability. Tax planning can be a significant challenge, if you are not an expert in such a field. This is why hiring a tax specialist is a great idea. Hiring an expert gives you an assurance that your tax issues will be handled with accuracy and you will enjoy the peace of mind that comes with knowing that you did the best you could to reduce your tax liability legitimately.",
+    items: [],
   },
   {
-    icon: ShieldCheckIcon,
-    title: "Compliance & Advisory",
+    icon: ClipboardDocumentListIcon,
+    title: "IRS Forms 8938, 5471 & 5472",
     description:
-      "IRS correspondence handling, audit support, and ongoing compliance guidance to keep you in good standing with tax authorities.",
-  },
-  {
-    icon: GlobeIcon,
-    title: "FBAR & PFIC",
-    description:
-      "Specialized reporting for foreign bank accounts (FBAR/FinCEN 114) and Passive Foreign Investment Companies. Avoid costly penalties with expert guidance.",
+      "Specialized filing for Statement of Specified Foreign Financial Assets (Form 8938), Information Return of U.S. Persons with respect to certain foreign corporations (Form 5471), and Information Return of a 25% Foreign-Owned U.S. Corporation (Form 5472). Avoid costly penalties with expert guidance.",
+    items: [],
   },
 ];
 
@@ -51,8 +70,8 @@ export default function Services() {
             Services
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-charcoal/70">
-            Comprehensive tax and advisory solutions designed to protect your
-            wealth and keep you compliant.
+            Comprehensive tax, bookkeeping, and advisory solutions designed to
+            protect your wealth and keep you compliant.
           </p>
         </div>
 
@@ -71,6 +90,19 @@ export default function Services() {
               <p className="mt-2 text-base leading-relaxed text-charcoal/70">
                 {service.description}
               </p>
+              {service.items.length > 0 && (
+                <ul className="mt-4 space-y-2">
+                  {service.items.map((item) => (
+                    <li
+                      key={item}
+                      className="flex items-start gap-2 text-sm text-charcoal/80"
+                    >
+                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           ))}
         </div>

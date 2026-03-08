@@ -6,7 +6,7 @@ const steps = [
     icon: CalendarIcon,
     title: "Schedule a Consultation",
     description:
-      "Reach out via email or phone to book a free initial consultation. We'll discuss your tax situation and how we can help.",
+      "Reach out via email or phone to book an initial consultation. The first 30 minutes are free. We'll discuss your tax situation and how we can help.",
   },
   {
     number: 2,
