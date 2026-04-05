@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Services from "./components/Services";
 import WhyChoose from "./components/WhyChoose";
 import About from "./components/About";
+import Testimonials from "./components/Testimonials";
 import HowItWorks from "./components/HowItWorks";
 import CtaBanner from "./components/CtaBanner";
 import Footer from "./components/Footer";
@@ -15,6 +16,7 @@ export default function Home() {
       <Services />
       <WhyChoose />
       <About />
+      <Testimonials />
       <HowItWorks />
       <CtaBanner />
       <Footer />
